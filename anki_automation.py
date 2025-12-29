@@ -1,1 +1,8 @@
-print("Automate that shit!!!!")
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+
+print("Loaded API_KEY:", API_KEY)
