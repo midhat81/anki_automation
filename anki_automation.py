@@ -3,6 +3,7 @@ import os
 
 load_dotenv()
 
-API_KEY = os.getenv("API_KEY")
-
-print("Loaded API_KEY:", API_KEY)
+DEEPL_API_KEY = os.getenv("DEEPL_API_KEY")
+SERP_API_KEY = os.getenv("SERP_API_KEY")
+print("Loaded DEEPL_API_KEY:", DEEPL_API_KEY)
+print("Loaded SERP_API_KEY:", SERP_API_KEY)
