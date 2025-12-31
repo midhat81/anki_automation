@@ -1,10 +1,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+# UNCOMMENT AFTER generate_anki_cards is difined
+# from backend.anki_automation import generate_anki_cards
+
 
 app = FastAPI()
 
 # ---- CORS (required for browser requests) ----
+# ADD VERCEL URL AFTER FRONTEND IS DEPLOYED
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],  # Vite dev server
