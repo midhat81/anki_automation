@@ -20,6 +20,11 @@ app.add_middleware(
 class PingRequest(BaseModel):
     message: str
 
+@app.get("/ping")
+def ping():
+    return {"status": "ok"}
+
+
 @app.post("/ping")
 def ping(req: PingRequest):
     return {
